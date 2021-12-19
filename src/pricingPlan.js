@@ -1,4 +1,4 @@
-export default pricingPlan = [
+export const pricingPlan = [
   {
     plan: "Basic",
     amount: 19.99,

@@ -9,7 +9,7 @@ const SwitchBtn = (props) => {
         <input
           type="checkbox"
           checked={props.monthly}
-          onClick={() => props.setMonthly(!props.monthly)}
+          onChange={() => props.setMonthly(!props.monthly)}
         ></input>
         <span className="toggle" />
       </label>

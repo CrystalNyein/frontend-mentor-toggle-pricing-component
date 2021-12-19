@@ -14,11 +14,11 @@ const PricingCard = (props) => {
         {props.amount}
       </h3>
       <hr />
-      {props.services.map((service) => (
-        <>
+      {props.services.map((service, index) => (
+        <div key={index}>
           <p>{service}</p>
           <hr />
-        </>
+        </div>
       ))}
       <button className="btn">Learn more</button>
     </div>

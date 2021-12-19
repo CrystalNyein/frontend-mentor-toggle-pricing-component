@@ -4,12 +4,12 @@
   background-color: white;
   border-radius: 0.7rem;
   padding: 1.5rem;
-}
-.PricingCard.recommend {
-  min-height: 32rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.PricingCard.recommend {
+  min-height: 29rem;
   background-image: var(--gradient-bg-right);
 }
 .PricingCard.recommend * {

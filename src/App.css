@@ -1,0 +1,13 @@
+.App {
+  display: grid;
+  place-content: center;
+}
+h1 {
+  text-align: center;
+  margin: 4rem 0 2rem;
+  color: hsl(233, 13%, 49%);
+}
+.pricing-component {
+  display: flex;
+  align-items: center;
+}

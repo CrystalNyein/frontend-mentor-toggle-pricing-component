@@ -36,7 +36,7 @@
 .PricingCard hr {
   border: transparent;
   height: 1px;
-  background-color: hsl(240, 17%, 89%);
+  background-color: hsla(240, 17%, 89%, 0.3);
 }
 .PricingCard p {
   text-align: center;
@@ -70,4 +70,18 @@
   background: none;
   border-color: hsl(240, 78%, 98%);
   color: hsl(240, 78%, 98%);
+}
+@media only screen and (max-width: 879px) {
+  .PricingCard {
+    width: 25rem;
+    max-width: calc(90vw - 3rem);
+  }
+  .PricingCard.recommend {
+    min-height: 25rem;
+  }
+}
+@media only screen and (min-width: 880px) and (max-width: 1080px) {
+  .PricingCard {
+    width: 17rem;
+  }
 }

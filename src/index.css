@@ -1,5 +1,10 @@
 :root {
-  --gradient-bg: linear-gradient(
+  --gradient-bg-left: linear-gradient(
+    to left,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  --gradient-bg-right: linear-gradient(
     to right,
     hsl(236, 72%, 79%),
     hsl(237, 63%, 64%)

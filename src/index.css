@@ -23,6 +23,7 @@ body {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: hsl(240, 78%, 98%);
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

@@ -4,11 +4,14 @@ import SwitchBtn from "./components/SwitchBtn";
 import PricingCard from "./components/PricingCard";
 import { pricingPlan } from "./pricingPlan";
 import { useState } from "react";
+import topBackground from "./assets/images/bg-top.svg";
+import bottomBackground from "./assets/images/bg-bottom.svg";
 
 const App = () => {
   const [monthly, setMonthly] = useState(true);
   return (
     <main className="App">
+      <img className="top-background" src={topBackground} alt=""></img>
       <h1>Our Pricing</h1>
       <SwitchBtn setMonthly={setMonthly} monthly={monthly} />
       <div className="pricing-component">
@@ -40,6 +43,7 @@ const App = () => {
           services={pricingPlan[2].services}
         />
       </div>
+      <img className="bottom-background" src={bottomBackground} alt=""></img>
     </main>
   );
 };

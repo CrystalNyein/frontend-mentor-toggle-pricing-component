@@ -13,3 +13,15 @@ h1 {
   display: flex;
   align-items: center;
 }
+.top-background {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.bottom-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}

@@ -1,10 +1,18 @@
 import React from "react";
+import "./PricingCard.css";
 
 const PricingCard = (props) => {
   return (
-    <div className="PricingCard">
+    <div
+      className={
+        props.plan === "Professional" ? "PricingCard recommend" : "PricingCard"
+      }
+    >
       <h2>{props.plan}</h2>
-      <h3>{props.amount}</h3>
+      <h3>
+        <span>$ </span>
+        {props.amount}
+      </h3>
       <hr />
       {props.services.map((service) => (
         <>

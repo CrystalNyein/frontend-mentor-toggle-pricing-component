@@ -1,0 +1,60 @@
+.PricingCard {
+  width: 20rem;
+  min-height: 25rem;
+  background-color: white;
+  border-radius: 0.7rem;
+  padding: 1.5rem;
+}
+.PricingCard.recommend {
+  min-height: 32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: var(--gradient-bg-right);
+}
+.PricingCard.recommend * {
+  color: hsl(240, 78%, 98%);
+}
+.PricingCard h2 {
+  font-size: 1.1rem;
+  color: hsl(233, 13%, 49%);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.PricingCard h3 {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem;
+}
+.PricingCard h3 span {
+  font-size: 2rem;
+  margin-right: 0.3rem;
+}
+.PricingCard hr {
+  border: transparent;
+  height: 1px;
+  background-color: hsl(240, 17%, 89%);
+}
+.PricingCard p {
+  text-align: center;
+  margin: 1rem;
+  color: hsl(233, 13%, 49%);
+}
+.PricingCard .btn {
+  width: 100%;
+  background-image: var(--gradient-bg-right);
+  margin-top: 2rem;
+  border: none;
+  padding: 0.8rem 0;
+  text-transform: uppercase;
+  color: hsl(240, 78%, 98%);
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  border-radius: 0.3rem;
+}
+.PricingCard.recommend .btn {
+  background: hsl(240, 78%, 98%);
+  color: hsl(237, 63%, 64%);
+}

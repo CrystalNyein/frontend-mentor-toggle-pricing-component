@@ -1,0 +1,47 @@
+.SwitchBtn {
+  display: flex;
+  align-items: center;
+}
+.switch {
+  width: 3.5rem;
+  height: 2rem;
+  position: relative;
+  display: inline-block;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin: 0 1.7rem;
+}
+.switch input {
+  display: none;
+}
+.toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem;
+  background-image: var(--gradient-bg-right);
+}
+.toggle::before {
+  content: "";
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+  height: 1.6rem;
+  width: 1.6rem;
+  transition: all 0.4s;
+}
+input:checked ~ .toggle::before {
+  left: 1.7rem;
+}
+input:checked ~ .toggle {
+  background-image: var(--gradient-bg-left);
+}
+.SwitchBtn p {
+  display: inline;
+  font-size: 0.9rem;
+  color: hsl(234, 14%, 74%);
+}

@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: 1px 3px 30px hsla(234, 14%, 74%, 0.3);
 }
 .PricingCard.recommend {
   min-height: 29rem;
@@ -46,15 +47,27 @@
   width: 100%;
   background-image: var(--gradient-bg-right);
   margin-top: 2rem;
-  border: none;
+  border: 1px solid transparent;
   padding: 0.8rem 0;
   text-transform: uppercase;
   color: hsl(240, 78%, 98%);
   font-weight: 700;
   letter-spacing: 0.1rem;
   border-radius: 0.3rem;
+  transition: 0.4s;
+  cursor: pointer;
 }
 .PricingCard.recommend .btn {
   background: hsl(240, 78%, 98%);
   color: hsl(237, 63%, 64%);
+}
+.PricingCard .btn:hover {
+  background: none;
+  border-color: hsl(237, 63%, 64%);
+  color: hsl(237, 63%, 64%);
+}
+.PricingCard.recommend .btn:hover {
+  background: none;
+  border-color: hsl(240, 78%, 98%);
+  color: hsl(240, 78%, 98%);
 }

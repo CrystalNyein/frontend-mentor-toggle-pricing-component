@@ -42,6 +42,9 @@ input:checked ~ .toggle::before {
 input:checked ~ .toggle {
   background-image: var(--gradient-bg-left);
 }
+.switch:hover .toggle {
+  background: hsl(236, 72%, 79%);
+}
 .SwitchBtn p {
   display: inline;
   font-size: 0.9rem;

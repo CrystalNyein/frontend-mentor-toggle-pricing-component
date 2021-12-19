@@ -10,26 +10,32 @@ const App = () => {
   return (
     <main className="App">
       <h1>Our Pricing</h1>
-      <SwitchBtn />
+      <SwitchBtn setMonthly={setMonthly} monthly={monthly} />
       <div className="pricing-component">
         <PricingCard
           plan={pricingPlan[0].plan}
           amount={
-            monthly ? pricingPlan[0].amount : pricingPlan[0].amount * 10 + 0.09
+            monthly
+              ? pricingPlan[0].amount
+              : (pricingPlan[0].amount * 10 + 0.09).toFixed(2)
           }
           services={pricingPlan[0].services}
         />
         <PricingCard
           plan={pricingPlan[1].plan}
           amount={
-            monthly ? pricingPlan[1].amount : pricingPlan[1].amount * 10 + 0.09
+            monthly
+              ? pricingPlan[1].amount
+              : (pricingPlan[1].amount * 10 + 0.09).toFixed(2)
           }
           services={pricingPlan[1].services}
         />
         <PricingCard
           plan={pricingPlan[2].plan}
           amount={
-            monthly ? pricingPlan[2].amount : pricingPlan[2].amount * 10 + 0.09
+            monthly
+              ? pricingPlan[2].amount
+              : (pricingPlan[2].amount * 10 + 0.09).toFixed(2)
           }
           services={pricingPlan[2].services}
         />

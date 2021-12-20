@@ -3,6 +3,10 @@
   place-content: center;
   min-height: 100vh;
   position: relative;
+  background-image: url("./assets/images/bg-top.svg"),
+    url("./assets/images/bg-bottom.svg");
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
 }
 h1 {
   text-align: center;

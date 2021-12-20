@@ -9,18 +9,19 @@ const PricingCard = (props) => {
       }
     >
       <h2>{props.plan}</h2>
-      <h3>
+      <p>
         <span>$ </span>
         {props.amount}
-      </h3>
-      <hr />
-      {props.services.map((service, index) => (
-        <div key={index}>
-          <p>{service}</p>
-          <hr />
-        </div>
-      ))}
-      <button className="btn">Learn more</button>
+      </p>
+      <ul>
+        {props.services.map((service, index) => (
+          <li key={index}>{service}</li>
+        ))}
+      </ul>
+
+      <a href="#" className="btn">
+        Learn more
+      </a>
     </div>
   );
 };

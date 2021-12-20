@@ -14,7 +14,7 @@
   margin: 0 1.7rem;
 }
 .switch input {
-  display: none;
+  opacity: 0;
 }
 .toggle {
   position: absolute;

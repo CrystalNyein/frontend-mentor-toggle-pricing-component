@@ -3,11 +3,10 @@
   place-content: center;
   min-height: 100vh;
   position: relative;
-  overflow-x: hidden;
 }
 h1 {
   text-align: center;
-  margin: 0 0 2rem;
+  margin: 2rem 0 2rem;
   color: hsl(233, 13%, 49%);
 }
 .pricing-component {
@@ -27,9 +26,9 @@ h1 {
   z-index: -1;
 }
 @media only screen and (max-width: 879px) {
-  h1 {
-    margin-top: 3rem;
-  }
+  /* .App {
+    overflow-x: hidden;
+  } */
   .pricing-component {
     flex-direction: column;
     gap: 2rem;

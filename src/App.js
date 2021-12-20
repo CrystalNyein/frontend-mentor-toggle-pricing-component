@@ -11,12 +11,6 @@ const App = () => {
   const [monthly, setMonthly] = useState(true);
   return (
     <main className="App">
-      {/* <img
-        className="top-background"
-        src={topBackground}
-        alt=""
-        aria-hidden={true}
-      ></img> */}
       <h1>Our Pricing</h1>
       <SwitchBtn setMonthly={setMonthly} monthly={monthly} />
       <div className="pricing-component">
@@ -48,12 +42,6 @@ const App = () => {
           services={pricingPlan[2].services}
         />
       </div>
-      {/* <img
-        className="bottom-background"
-        src={bottomBackground}
-        alt=""
-        aria-hidden={true}
-      ></img> */}
     </main>
   );
 };
